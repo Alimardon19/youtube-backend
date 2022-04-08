@@ -1,3 +1,20 @@
 [
-
+    {
+        "username": "Diyorbek",
+        "password": "38c789ff1464e2c7ea8f0f318a9a05ada7bf634ccc2cba227564f56fafb9fc28",
+        "userId": 1,
+        "profileImage": "1649315118024_34680.jpg"
+    },
+    {
+        "username": "Diyorbek2",
+        "password": "b64999e70a042c9b15f1287172dd6475ae03edd8bb4282cf1095235661f31905",
+        "userId": 2,
+        "profileImage": "1649315396705_34882.jpg"
+    },
+    {
+        "username": "Admin4",
+        "password": "cec0f51a767107cabf9dced5f17c60e60bd4858db0019681ba69ccfc28112488",
+        "userId": 3,
+        "profileImage": "1649390480284_abror_boy.jpg"
+    }
 ]

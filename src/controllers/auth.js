@@ -59,8 +59,6 @@ const LOGIN = (req, res, next) => {
         const users = req.readFile('users') || []
         
         let {password , username} = req.body 
-        console.log(users)
-        console.log(req.body);
         if(!(password && username)){
             new AuthorizationError(400, 'Username and password required!')
         }
@@ -93,7 +91,6 @@ const CHECK = (req, res, next) => {
         if(!token){
             throw new Error("Token invalid")
         }
-        console.log(verify(token))
 
         res.status(200).json({
             status: 200, 
