@@ -56,7 +56,7 @@ const GET = (req, res, next) => {
         let videos = req.readFile("videos") || []
 
         videos = videos.map(video => {
-            video.video = path.resolve(process.cwd(), "src", "uploads", "videos", video.video)  
+            video.video = "https://youtube-clone-uz.herokuapp.com/" + "videos/" + video.video
             return video
         })
 

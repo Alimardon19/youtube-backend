@@ -8,7 +8,7 @@ const GET = (req, res, next) => {
 
         users = users.map(user => {
             delete user.password
-            user.profileImage = path.resolve("https://youtube-clone-uz.herokuapp.com", "images", user.profileImage)  
+            user.profileImage = "https://youtube-clone-uz.herokuapp.com/" + "images/" + user.profileImage  
             user.videos = videos.filter(el => user.userId == el.userId)
             return user
         })
