@@ -8,7 +8,7 @@ const GET = (req, res, next) => {
 
         users = users.map(user => {
             delete user.password
-            user.profileImage = path.resolve(__dirname , "..", "uploads", "images", user.profileImage)  
+            user.profileImage = path.resolve(process.cwd(), "src", "uploads", "images", user.profileImage)  
             user.videos = videos.filter(el => user.userId == el.userId)
             return user
         })

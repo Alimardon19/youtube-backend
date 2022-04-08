@@ -56,7 +56,7 @@ const GET = (req, res, next) => {
         let videos = req.readFile("videos") || []
 
         videos = videos.map(video => {
-            video.video = path.resolve(__dirname , "..", "uploads", "videos", video.video)  
+            video.video = path.resolve(process.cwd(), "src", "uploads", "videos", video.video)  
             return video
         })
 
@@ -111,7 +111,7 @@ const DELETE = (req, res, next) => {
             return next(new AuthorizationError(401, "Video not found!"))
         }
 
-        let videoPath = path.resolve(__dirname, "..", "uploads", "videos", video.video) 
+        let videoPath = path.resolve(process.cwd(), "src", "uploads", "videos", video.video) 
         
         fs.unlinkSync(videoPath)
 
